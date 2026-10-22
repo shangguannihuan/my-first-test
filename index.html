@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>我的待办清单</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>我的待办清单</h1>
+    <p class="subtitle">第一个真实小项目 · 顺便练习 Git</p>
+
+    <form class="task-form" id="task-form">
+      <input
+        id="task-input"
+        type="text"
+        placeholder="写一个任务，按回车添加…"
+        autocomplete="off"
+      />
+      <button type="submit">添加</button>
+    </form>
+
+    <ul class="task-list" id="task-list"></ul>
+
+    <p class="empty" id="empty-hint">还没有任务，先加一个吧。</p>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
